@@ -1,3 +1,4 @@
+var i = 0;
 var delay = 1000;  //删除与确认操作以1000ms为周期循环进行
 function del() {
     try {
@@ -21,6 +22,7 @@ function next_page() {
     })
 }
 del();
-while (1) {
+while (i < 100) {
     setTimeout("del()", 5000);
+    i++;
 }

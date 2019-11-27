@@ -22,7 +22,7 @@ function next_page() {
     })
 }
 del();
-while (i < 100) {
-    setTimeout("del()", 5000);
+while (i < 10) {
+    del();
     i++;
 }

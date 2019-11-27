@@ -20,6 +20,7 @@ function next_page() {
         }
     })
 }
+del();
 while (1) {
-    del();
+    setTimeout("del()", 5000);
 }

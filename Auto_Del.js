@@ -1,5 +1,9 @@
 var delay = 500;  //删除与确认操作以500ms为周期循环进行
 function del() {
+    if(document.querySelector('.tcaptcha-iframe')!=null){
+        console.log('检测到安全验证弹窗，脚本终止！');
+        return;
+    }
     try {
         document.querySelector('.app_canvas_frame').contentDocument.querySelector('.del_btn').click();
         setTimeout("yes()", delay);
